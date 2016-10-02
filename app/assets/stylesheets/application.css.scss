@@ -15,3 +15,54 @@
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
+ @import 'normalize';
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #f3f3f3;
+}
+
+li {
+  list-style: none;
+}
+#wrapper {
+  position: relative;
+  width: 1000px;
+}
+
+#sidebar {
+  width: 230px;
+  border-right: 1px solid black;
+  position: fixed;
+  left: 0;
+  height: 100%;
+  background: #4d394b;
+}
+
+#header {
+  height: 60px;
+  border-bottom: 1px solid #c6c6c6;
+  margin-left: 230px;
+  background: #fff;
+}
+#main_content {
+  margin-left: 230px;
+  width: 60%;
+  padding: 1em 3em;
+  background: #fff;
+  float: left;
+}
+
+.box {
+  height: 600px;
+  overflow: auto;
+}
+
+.navbar {
+  margin-left: 10px;
+  width: 20%;
+  background: #fff;
+  float: left;
+
+}

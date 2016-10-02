@@ -1,0 +1,28 @@
+#logo {
+  width: 230px;
+  background-image: url(img/engoo.png);
+}
+
+.item {
+  background: #4c9689;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  a {
+    color: #fff;
+  }
+}
+
+.main_nav {
+  width: 200px;
+  margin-top: 40px;
+  li {
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  li a {
+    font-size: 1em;
+    text-decoration: none;
+    color: #c6c6c6;
+  }
+}
