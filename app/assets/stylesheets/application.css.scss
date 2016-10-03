@@ -87,7 +87,7 @@ textarea.form-control {
 }
 
 .badge {
-  background: #e94c5c;
+  background: #e36893;
   padding-left: -10px;
 }
 .well {
@@ -200,14 +200,13 @@ textarea.form-control {
 }
 
 .sidebar-footer {
-  bottom: 0;
+  bottom: 15px;
   position: fixed;
   width: 250px;
   height: 80px;
 }
 
 #user-id {
-  border: 1px solid black;
   margin-top: 15px;
   margin-left: 15px;
   float: left;
@@ -227,6 +226,10 @@ textarea.form-control {
 
 .content-well {
   margin-top: 10px;
+}
+
+.label {
+  background-color: #e36893;
 }
 #menu-toggle {
     text-decoration: none;
