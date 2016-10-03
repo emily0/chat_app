@@ -3,21 +3,35 @@
   <head>
     <title>ChatApp</title>
     <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Raleway:400,700' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <div class="wrapper">
-      <aside id="sidebar">
-        <%= render 'layouts/sidebar' %>
-      </aside>
-      <header id="header"></div>
-        <section id="main_content"><%= yield %>
-
-        </section>
-        <%= render 'layouts/navbar' %>
+    <div id="wrapper">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"></nav>
+      <div id="sidebar-wrapper">
+        <nav id="spy">
+          <%= render 'layouts/sidebar' %>
+        </nav>
+      </div>
+        <!-- Page content -->
+      <div id="page-content-wrapper">
+          <div class="page-content">
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-md-8 cotent-box">
+                        <%= yield %>
+                      </div>
+                      <div class="col-md-4 content-well ">
+                        <%= render 'layouts/content-well' %>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
     </div>
   </body>
 </html>

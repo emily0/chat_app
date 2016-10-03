@@ -1,17 +1,58 @@
-<div id="logo"><%= image_tag "engoo.png" %></div>
-<nav class="main_nav">
-  <li><a href="#">群組</a></li>
-  <li><a href="#">共同討論區</a></li>
-  <li><a href="#">#社群行銷</a></li>
-  <li><a href="#">#程式除錯</a></li>
-  <li><a href="#">#尋找老師</a></li>
-  <li><a href="#">#學生問題</a></li>
-  <li class="item"><%= link_to "找人才", chat_rooms_path %></li>
-  <li><a href="#">#聊天區</a></li>
-</nav>
+        <header class="sidebar-header">
+          <%= image_tag "logo.png" %>
+        </header>
+        <ul class="sidebar-nav nav">
+            <li class="sidebar-brand">
+                <a href="#home"><span class="fa fa-home solo">群組</span></a>
+            </li>
+            <li>
+                <a href="#anch1">
+                    <span class="fa fa-anchor solo">#&nbsp;共同討論區</span>
+                </a>
+            </li>
+            <li>
+                <a href="#anch2">
+                    <span class="fa fa-anchor solo">#&nbsp;行銷企劃</span>
+                </a>
+            </li>
+            <li>
+                <a href="#anch3">
+                    <span class="fa fa-anchor solo">#&nbsp;程式錯誤</span>
+                </a>
+            </li>
+            <li>
+                <a href="#anch4">
+                    <span class="fa fa-anchor solo">#&nbsp;找人才</span>
+                    <span class="badge">8</span>
+                </a>
+            </li>
 
-<nav class="main_nav">
-  <li><a href="#">成員</a></li>
-  <li><a href="#">Engoo</a></li>
-  <li><a href="#">黃鈺閔</a></li>
-</nav>
+            <li class="sidebar-brand">
+                <a href="#home"><span class="fa fa-home solo">成員</span></a>
+            </li>
+            <li>
+                <a href="#anch1">
+                    <span class="fa fa-anchor solo">○&nbsp;Engoo1</span>
+                </a>
+            </li>
+            <li>
+                <a href="#anch1">
+                    <span class="fa fa-anchor solo">○&nbsp;Engoo2</span>
+                </a>
+            </li>
+            <li>
+                <a href="#anch1">
+                    <span class="fa fa-anchor solo">○&nbsp;Engoo3</span>
+                </a>
+            </li>
+            <li>
+                <a href="#anch2">
+                    <span class="fa fa-anchor solo">●&nbsp;黃鈺閔</span>
+                </a>
+            </li>
+        </ul>
+
+        <footer class="sidebar-footer">
+          <div id="user-id"><%= image_tag "profile.png" %></div>
+          <div id="user-info"><p>黃鈺閔</p><p>Online</p></div>
+        </footer>
