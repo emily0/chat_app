@@ -1,8 +1,6 @@
 <div class="box">
     <h1>#<%= @chat_room.title %></h1>
-    <p>早在兩年前我就開始使用Engoo來學習英語，對我來說Engoo是有別於以往的視訊教學平台，也確實幫助我突破英語口說的罩門，我一直打從心底非常感謝這個與外師媒合的平台
-我非常喜歡Engoo的教學理念，我想選擇一個能夠讓我充滿熱情的企業
-</p>
+    <p><%= @chat_room.description %></p>
 <hr>
 
     <div id="messages" data-chat-room-id="<%= @chat_room.id %>">

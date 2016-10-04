@@ -11,7 +11,17 @@
 
   <body>
     <div id="wrapper">
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"></nav>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="user-session">
+        <% if current_user %>
+          <%= link_to('登出', destroy_user_session_path, :method => :delete) %> |
+          <%= link_to('編輯', edit_registration_path(:user)) %>
+        <% else %>
+          <%= link_to('註冊', new_registration_path(:user)) %> |
+          <%= link_to('登入', new_session_path(:user)) %>
+        <% end %>
+      </div>
+    </nav>
       <div id="sidebar-wrapper">
         <nav id="spy">
           <%= render 'layouts/sidebar' %>

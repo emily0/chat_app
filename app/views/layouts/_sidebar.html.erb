@@ -1,5 +1,7 @@
         <header class="sidebar-header">
-          <%= image_tag "logo.png" %>
+          <%= link_to root_path do %>
+            <%= image_tag "logo.png" %>
+          <% end %>
         </header>
         <ul class="sidebar-nav nav">
             <li class="sidebar-brand">
@@ -11,20 +13,16 @@
                 </a>
             </li>
             <li>
-                <a href="#anch2">
-                    <span class="fa fa-anchor solo">#&nbsp;行銷企劃</span>
-                </a>
+                <%= link_to "# 行銷企劃", marketing_path %>
             </li>
             <li>
-                <a href="#anch3">
-                    <span class="fa fa-anchor solo">#&nbsp;程式錯誤</span>
-                </a>
+              <%= link_to "# 網站程式", programming_path %>
             </li>
             <li>
-                <a href="#anch4">
+              <%= link_to chat_rooms_path do %>
                     <span class="fa fa-anchor solo">#&nbsp;找人才</span>
                     <span class="badge">8</span>
-                </a>
+              <% end %>
             </li>
 
             <li class="sidebar-brand">
